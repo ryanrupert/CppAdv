@@ -24,4 +24,7 @@ namespace adv
 		date yearconv; //this holds the year and day
 	};
 	extern Time time;
+
+	//this will find if a number is prime
+	bool isPrime(int num);
 }

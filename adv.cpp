@@ -54,3 +54,35 @@ void adv::Time::set_value(int day, int year)
 }
 //adv::Time time;
 
+bool adv::isPrime(int num)
+{
+	bool prime = true;
+	//check if number is prime
+	if (num == 1) 
+	{
+		prime = false;
+	}
+	else if (num == 2)
+	{
+		prime = true;
+	}
+	else if (!(num % 2))
+	{
+		prime = false;
+	}
+	else
+	{
+		//check if prime
+		for (int x = 3; x <= sqrt(num); x += 2) 
+		{
+			if (!(num % x)) 
+			{
+				prime = false;
+				break;
+			}
+	
+		}
+	}
+	return prime;
+	//return true;
+}
