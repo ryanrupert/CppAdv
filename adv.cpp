@@ -86,3 +86,17 @@ bool adv::isPrime(int num)
 	return prime;
 	//return true;
 }
+//round up function
+//Source: http://faculty.salisbury.edu/~dxdefino/roundoff.htm
+double adv::round(double dec, int place)
+{
+	double answer = 0.0;
+	std::cout << place << std::endl;
+	//place = pow(10, place);
+	place = round(pow(10, place));
+	//++place;
+	std::cout << place << std::endl;
+	answer = floor(dec * place + 0.5) / place;
+	return answer;
+}
+

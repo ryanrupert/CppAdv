@@ -27,4 +27,6 @@ namespace adv
 
 	//this will find if a number is prime
 	bool isPrime(int num);
+	//this will round a decimal number to the chosen place
+	double round(double dec, int place);
 }
