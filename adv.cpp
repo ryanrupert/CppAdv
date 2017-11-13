@@ -1,5 +1,6 @@
 #include "adv.h"
 
+//Time class
 adv::Time adv::time;
 adv::Time::date adv::Time::day_to_year()
 {
@@ -52,8 +53,9 @@ void adv::Time::set_value(int day, int year)
 	yearconv.day = day;
 	yearconv.year = year;
 }
-//adv::Time time;
+//end Time class
 
+//isPrime
 bool adv::isPrime(int num)
 {
 	bool prime = true;
