@@ -94,7 +94,7 @@ bool adv::isPrime(int num)
 double adv::round(double dec, int place)
 {
 	double answer = 0.0;
-	place = round(pow(10, place));
+	place = std::round(pow(10, place));
 	answer = floor(dec * place + 0.5) / place;
 	return answer;
 }
