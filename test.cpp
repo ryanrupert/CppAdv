@@ -30,3 +30,12 @@ TEST_CASE("Prime number")
 	CHECK(adv::isPrime(1187) == true);
 	CHECK(adv::isPrime(991) == true);
 }
+
+TEST_CASE("Round decimal")
+{
+	CHECK(adv::round(1.23, 1) == 1.2);
+	CHECK(adv::round(0.02, 1) == 0.0);
+	CHECK(adv::round(53.625, 2) == 53.63);
+	CHECK(adv::round(100.5265, 3) == 100.527);
+	CHECK(adv::round(526.78526, 4) == 526.7853);
+}
